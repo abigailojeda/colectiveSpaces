@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+$bg: #edf3f5;
+$title: #6f8ebc;
+$cta:#3763a6;
+
+
+@media screen and (min-width: 600px) {
+    .on-view {
+      width: 600px!important;
+      margin: auto;
+    }
+
+    
+  }

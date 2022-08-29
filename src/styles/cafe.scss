@@ -1,0 +1,148 @@
+@import './settings.scss';
+
+body {
+  background-color: $bg;
+
+  .preview-img {
+    margin-top: 2em;
+    width: 80%;
+    display: none;
+    margin: 2em auto;
+
+    &.on-view {
+      display: flex;
+    }
+  }
+
+  h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 56px;
+    margin-top: 2em;
+    color: $title;
+  }
+}
+
+.to-img {
+  display: none;
+  margin-top: 2em;
+  width: 80%;
+  flex-direction: column;
+  margin: 2em auto;
+
+  &.on-view {
+    display: flex;
+  }
+}
+
+.menu {
+ // background-image: url(assets/img/1.png);
+  background-size: cover;
+  background-color: #fff;
+  padding: 1em;
+  margin-bottom: 2em;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 6em 1em 3em 1em;
+  position: relative;
+
+  h4{
+    margin-bottom: 2em;
+  }
+ 
+  .form-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    input {
+      width: calc(45% - 20px);
+      border-radius: 8px;
+      border: 1px solid gray;
+      height: 35px;
+      padding: 0.5em;
+
+      &.name-input{
+        width: 55%;
+      }
+
+      &:focus{
+        outline: none;
+        border: 1px solid blue;
+      }
+    }
+
+  
+  }
+
+
+  .to-save{
+    position: absolute;
+    bottom: -93px;
+    width: calc(100% + 2em);
+}
+
+  textarea {
+    width: calc(100% );
+    resize: none;
+    height: 80px;
+    margin: 0.5em 0;
+    font-size: 14px;
+  
+      border-radius: 8px;
+      border: 1px solid gray;
+      padding: 0.5em;
+
+      &:focus{
+        outline: none;
+        border: 1px solid blue;
+      }
+    
+  }
+}
+
+.btn{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.cta{
+    cursor: pointer;
+    border: none;
+    height: 45px;
+    border-radius: 99rem;
+    font-weight: bold;
+    background-color: $cta;
+    color: #fff;
+    font-size: 18px;
+
+    &.download{
+        background-color: rgb(224, 74, 28);
+    }
+}
+
+.menu-def{
+    form{
+        .form-row{
+          border-bottom: 1px solid black;
+            input{
+                border: 1px solid transparent;
+                background-color: transparent;
+            }
+        }
+        textarea{
+            border: none;
+             background-color: transparent;
+             overflow: hidden;
+        }
+    }
+}
+
