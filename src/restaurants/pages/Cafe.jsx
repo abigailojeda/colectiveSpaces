@@ -16,7 +16,7 @@ export const Cafe = () => {
         toPng(ref.current, { cacheBust: true, quality: 0.96 })
             .then((dataUrl) => {
                 const link = document.createElement('a')
-                link.download = 'my-image-name.png'
+                link.download = 'mi-plato-del-dia.png'
                 link.href = dataUrl
                 link.click()
             })
@@ -61,9 +61,10 @@ export const Cafe = () => {
 
 
 
-            <div className={preview ? 'preview-img on-view menu' : 'preview-img'}>
+            <div style={{backgroundImage:"url(./assets/img/plato-del-dia.png)"}}
+             className={preview ? 'preview-img on-view menu' : 'preview-img'}>
                 <form onSubmit={onSubmit}>
-                    <h4>Plato del día</h4>
+                    {/* <h4>Plato del día</h4> */}
                     <div className="form-row">
                         <input type="text"
                             name="firstRowText"
@@ -96,9 +97,10 @@ export const Cafe = () => {
 
             <div className={preview ? 'to-img ' : 'to-img on-view '}
             >
-                <section className="menu-def menu" ref={ref}>
+                <section style={{backgroundImage:"url(./assets/img/plato-del-dia.png)"}}
+                 className="menu-def menu" ref={ref}>
                     <form>
-                    <h4>Plato del día</h4>
+                    {/* <h4>Plato del día</h4> */}
                         <div className="form-row">
                             <input type="text"
                                 name="firstRowText"

@@ -41,7 +41,7 @@ body {
 }
 
 .menu {
-  background-image: url("./assets/img/1.png");
+  // background-image: url("./assets/img/1.png");
   background-size: cover;
   background-color: #fff;
   padding: 1em;
@@ -55,7 +55,7 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5em 1em 6em 1em;
+  padding: 4em 1em 6em 1em;
   position: relative;
 
   h4{
@@ -63,8 +63,10 @@ form {
     color: #609692;
     font-family: 'Source Serif Pro', serif;
     font-style: italic;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bolder;
+    width: 120px;
+    text-align: center;
   }
  
   .form-row {
