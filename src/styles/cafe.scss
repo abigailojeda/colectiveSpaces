@@ -11,6 +11,7 @@ body {
 
     &.on-view {
       display: flex;
+      margin-bottom: 4em;
     }
   }
 
@@ -22,15 +23,17 @@ body {
     height: 56px;
     margin-top: 2em;
     color: $title;
+   
   }
 }
 
 .to-img {
   display: none;
+  margin: auto;
   margin-top: 2em;
   width: 80%;
   flex-direction: column;
-  margin: 2em auto;
+ margin-bottom: 10em;
 
   &.on-view {
     display: flex;
@@ -38,11 +41,12 @@ body {
 }
 
 .menu {
- // background-image: url(assets/img/1.png);
+  background-image: url(assets/img/1.png);
   background-size: cover;
   background-color: #fff;
   padding: 1em;
   margin-bottom: 2em;
+  background-position:  50%;
 }
 
 form {
@@ -51,11 +55,16 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 6em 1em 3em 1em;
+  padding: 1.5em 1em 6em 1em;
   position: relative;
 
   h4{
-    margin-bottom: 2em;
+    margin-bottom: 0.5em;
+    color: #609692;
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bolder;
   }
  
   .form-row {
@@ -66,7 +75,7 @@ form {
     input {
       width: calc(45% - 20px);
       border-radius: 8px;
-      border: 1px solid gray;
+      border: 1px solid #dcdddd;
       height: 35px;
       padding: 0.5em;
 
@@ -76,7 +85,7 @@ form {
 
       &:focus{
         outline: none;
-        border: 1px solid blue;
+        border: 1px solid #5fb3ad;
       }
     }
 
@@ -93,17 +102,17 @@ form {
   textarea {
     width: calc(100% );
     resize: none;
-    height: 80px;
+    height: 90px;
     margin: 0.5em 0;
     font-size: 14px;
   
       border-radius: 8px;
-      border: 1px solid gray;
+      border: 1px solid #dcdddd;
       padding: 0.5em;
 
       &:focus{
         outline: none;
-        border: 1px solid blue;
+        border: 1px solid #5fb3ad;
       }
     
   }
@@ -132,10 +141,16 @@ form {
 .menu-def{
     form{
         .form-row{
-          border-bottom: 1px solid black;
+          border-bottom: 1px solid #609692;
             input{
                 border: 1px solid transparent;
                 background-color: transparent;
+                font-weight: 700;
+                color: #335351;
+
+                &.price{
+                  text-align: right;
+                }
             }
         }
         textarea{

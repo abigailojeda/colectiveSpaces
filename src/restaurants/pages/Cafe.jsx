@@ -75,49 +75,16 @@ export const Cafe = () => {
                             name="firstRowNumber"
                             onChange={onInputChange}
                             value={firstRowNumber}
-                            placeholder='Precio del plato' />
+                            placeholder='Precio' />
                     </div>
                     <textarea
                         name='firstArea'
                         placeholder='Añade más información'
                         value={firstArea}
+                        maxlength="150"
                         onChange={onInputChange}
                     />
-                    {/* <div className="form-row">
-                        <input type="text"
-                            name="secondRowText"
-                            onChange={onInputChange}
-                            value={secondRowText}
-                            placeholder='introduce texto' />
-                        <input type="text"
-                            name="secondRowNumber"
-                            onChange={onInputChange}
-                            value={secondRowNumber}
-                            placeholder='introduce precio' />
-                    </div>
-                    <textarea
-                        name='secondArea'
-                        value={secondArea}
-                        onChange={onInputChange}
-                    />
-                    <div className="form-row">
-                        <input type="text"
-                            name="thirdRowText"
-                            onChange={onInputChange}
-                            value={thirdRowText}
-                            placeholder='introduce texto' />
-                        <input type="text"
-                            name="thirdRowNumber"
-                            onChange={onInputChange}
-                            value={thirdRowNumber}
-                            placeholder='introduce precio' />
-                    </div>
-                    <textarea
-                        name='thirdArean'
-                        value={thirdArea}
-                        onChange={onInputChange}
-                    /> */}
-
+                
 
                     <input type="submit"
                         value="Guardar"
@@ -136,48 +103,21 @@ export const Cafe = () => {
                             <input type="text"
                                 name="firstRowText"
                                 value={firstRowText}
+                                disabled
                                  />
                             <input type="text"
+                                className='price'
                                 name="firstRowNumber"
                                 value={firstRowNumber}
+                                disabled
                                  />
                         </div>
                         <textarea
                             name='firstArea'
                             value={firstArea}
+                            disabled
                         />
-                        {/* <div className="form-row">
-                            <input type="text"
-                                name="secondRowText"
-
-                                value={secondRowText}
-                                placeholder='introduce texto' />
-                            <input type="text"
-                                name="secondRowNumber"
-
-                                value={secondRowNumber}
-                                placeholder='introduce precio' />
-                        </div>
-                        <textarea
-                            name='secondArea'
-                            value={secondArea}
-                        />
-                        <div className="form-row">
-                            <input type="text"
-                                name="thirdRowText"
-
-                                value={thirdRowText}
-                                placeholder='introduce texto' />
-                            <input type="text"
-                                name="thirdRowNumber"
-
-                                value={thirdRowNumber}
-                                placeholder='introduce precio' />
-                        </div>
-                        <textarea
-                            name='thirdArean'
-                            value={thirdArea}
-                        /> */}
+                      
                     </form>
                 </section>
 
