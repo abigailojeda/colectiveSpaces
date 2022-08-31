@@ -1,4 +1,4 @@
-@import './settings.scss';
+@import "./settings.scss";
 
 body {
   background-color: $bg;
@@ -11,19 +11,18 @@ body {
 
     &.on-view {
       display: flex;
-      margin-bottom: 4em;
     }
   }
 
-  h2{
+  h2 {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 56px;
-    margin-top: 2em;
+    
     color: $title;
-   
+    margin-top: 160px;
   }
 }
 
@@ -33,7 +32,7 @@ body {
   margin-top: 2em;
   width: 80%;
   flex-direction: column;
- margin-bottom: 10em;
+  margin-bottom: 10em;
 
   &.on-view {
     display: flex;
@@ -46,7 +45,7 @@ body {
   background-color: #fff;
   padding: 1em;
   margin-bottom: 2em;
-  background-position:  50%;
+  background-position: 50%;
 }
 
 form {
@@ -58,17 +57,17 @@ form {
   padding: 4em 1em 6em 1em;
   position: relative;
 
-  h4{
+  h4 {
     margin-bottom: 0.5em;
     color: #609692;
-    font-family: 'Source Serif Pro', serif;
+    font-family: "Source Serif Pro", serif;
     font-style: italic;
     font-size: 20px;
     font-weight: bolder;
     width: 120px;
     text-align: center;
   }
- 
+
   .form-row {
     width: 100%;
     display: flex;
@@ -81,85 +80,80 @@ form {
       height: 35px;
       padding: 0.5em;
 
-      &.name-input{
+      &.name-input {
         width: 55%;
       }
 
-      &:focus{
+      &:focus {
         outline: none;
         border: 1px solid #5fb3ad;
       }
     }
-
-  
   }
 
-
-  .to-save{
+  .to-save {
     position: absolute;
     bottom: -93px;
     width: calc(100% + 2em);
-}
+  }
 
   textarea {
-    width: calc(100% );
+    width: calc(100%);
     resize: none;
     height: 90px;
     margin: 0.5em 0;
     font-size: 14px;
-  
-      border-radius: 8px;
-      border: 1px solid #dcdddd;
-      padding: 0.5em;
 
-      &:focus{
-        outline: none;
-        border: 1px solid #5fb3ad;
-      }
-    
+    border-radius: 8px;
+    border: 1px solid #dcdddd;
+    padding: 0.5em;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #5fb3ad;
+    }
   }
 }
 
-.btn{
-    width: 100%;
-    margin-bottom: 1em;
+.btn {
+  width: 100%;
+  margin-bottom: 1em;
 }
 
-.cta{
-    cursor: pointer;
-    border: none;
-    height: 45px;
-    border-radius: 99rem;
-    font-weight: bold;
-    background-color: $cta;
-    color: #fff;
-    font-size: 18px;
+.cta {
+  cursor: pointer;
+  border: none;
+  height: 45px;
+  border-radius: 99rem;
+  font-weight: bold;
+  background-color: $cta;
+  color: #fff;
+  font-size: 18px;
 
-    &.download{
-        background-color: rgb(224, 74, 28);
-    }
+  &.download {
+    background-color: rgb(224, 74, 28);
+  }
 }
 
-.menu-def{
-    form{
-        .form-row{
-          border-bottom: 1px solid #609692;
-            input{
-                border: 1px solid transparent;
-                background-color: transparent;
-                font-weight: 700;
-                color: #335351;
+.menu-def {
+  form {
+    .form-row {
+      border-bottom: 1px solid #609692;
+      input {
+        border: 1px solid transparent;
+        background-color: transparent;
+        font-weight: 700;
+        color: #335351;
 
-                &.price{
-                  text-align: right;
-                }
-            }
+        &.price {
+          text-align: right;
         }
-        textarea{
-            border: none;
-             background-color: transparent;
-             overflow: hidden;
-        }
+      }
     }
+    textarea {
+      border: none;
+      background-color: transparent;
+      overflow: hidden;
+    }
+  }
 }
-
